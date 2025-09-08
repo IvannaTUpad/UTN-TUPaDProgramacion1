@@ -159,4 +159,4 @@ print(f"El numero invertido es:{numero_invertido} ")
 
 
 
-
+#Por fin pude terminar este trabajo me costo asi que ha repasar.
