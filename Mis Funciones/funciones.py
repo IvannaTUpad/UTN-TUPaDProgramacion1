@@ -1,1 +1,0 @@
-# Contenido original del archivo funciones.py
