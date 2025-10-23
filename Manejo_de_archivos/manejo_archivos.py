@@ -44,7 +44,7 @@ with open("productos.txt","r") as archivo:
 
 # 3. Agregar productos desde teclado
 
-# 3. Agregar productos desde teclado (mejorado)
+# 3. Agregar productos desde teclado 
 
 while True:
     nuevo_producto = input("¿Desea agregar un nuevo producto? (s/n): ").lower()
@@ -134,4 +134,5 @@ print("\n Archivo productos.txt actualizado con todos los productos.")
 
 print("\n Lista final guardada:")
 for producto in productos:
+
     print(f"{producto['nombre']} - ${producto['precio']} - Cantidad: {producto['cantidad']}")
