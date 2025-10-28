@@ -9,7 +9,8 @@ def factorial(n):
         return n * factorial(n - 1)  
 
 print("\n--- Ejercicio 1: Factorial ---")
-for i in range(1, 6):
+limite = int(input("Ingrese un número para calcular los factoriales hasta ese valor: "))
+for i in range(1, limite + 1):
     print(f"{i}! = {factorial(i)}")
 
 
@@ -25,7 +26,8 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 print("\n--- Ejercicio 2: Fibonacci ---")
-for i in range(7):
+posicion = int(input("Ingrese hasta qué posición desea ver la serie de Fibonacci: "))
+for i in range(posicion + 1):
     print(f"F({i}) = {fibonacci(i)}")
 
 
@@ -111,19 +113,13 @@ print("Bloques para pirámide de 6 niveles:", contar_bloques(6))
 # aparece ese dígito dentro del número.
 
 def contar_digito(numero, digito):
-    numero_str = str(numero)
-    digito_str = str(digito)
-
-    if len(numero_str) == 0:
+    if numero == 0:
         return 0
-    else:
-        coincidencia = 1 if numero_str[0] == digito_str else 0
-        return coincidencia + contar_digito(numero_str[1:], digito)
+    coincidencia = 1 if numero % 10 == digito else 0
+    return coincidencia + contar_digito(numero // 10, digito)
 
 print("\n--- Ejercicio 8: Contar Dígito ---")
 print("Cantidad de veces que aparece el 2 en 12233421:", contar_digito(12233421, 2))
 print("Cantidad de veces que aparece el 5 en 5555:", contar_digito(5555, 5))
 print("Cantidad de veces que aparece el 7 en 123456:", contar_digito(123456, 7))
-
-
 
