@@ -141,3 +141,6 @@ El sistema modifica y actualiza este archivo automáticamente según las operaci
 
 Este proyecto es realizado como Trabajo Práctico Integrador para Programación 1 (Tecnicatura Universitaria en Programación a Distancia), con fines educativos.
 
+#Video de presentación grupal
+
+https://youtu.be/nqtmzqDv7Fs
